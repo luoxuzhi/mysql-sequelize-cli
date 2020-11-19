@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "status": "npx sequelize db:migrate:status",
-    "migrate": "npx sequelize db:migrate"
+    "migrate": "npx sequelize db:migrate",
+    "undo": "npx sequelize db:migrate:undo:all"
   },
   "author": "",
   "license": "ISC",
