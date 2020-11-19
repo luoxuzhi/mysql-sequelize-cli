@@ -6,7 +6,8 @@
   "scripts": {
     "status": "npx sequelize db:migrate:status",
     "migrate": "npx sequelize db:migrate",
-    "undo": "npx sequelize db:migrate:undo:all"
+    "undo": "npx sequelize db:migrate:undo:all",
+    "push": "git push origin master"
   },
   "author": "",
   "license": "ISC",
