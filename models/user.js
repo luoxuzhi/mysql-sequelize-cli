@@ -9,19 +9,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      User.belongsTo(models.Role, {
-        onDelete: 'NULL',
-        foreignKey: {
-          allowNull: false,
-        },
-      })
+      User.hasMany(models.Todo)
     }
   }
   User.init(
     {
-      firstName: DataTypes.STRING,
-      lastName: DataTypes.STRING,
-      email: DataTypes.STRING,
+      username: DataTypes.STRING,
     },
     {
       sequelize,
